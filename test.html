@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>:)</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	<style type="text/css">
+
+body, html, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  height: 100%;
+}
+
+div{
+display: block;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+  
+#caption {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+
+  opacity: .80;
+
+}
+#caption2 {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  opacity: .80;
+
+}
+hr{
+margin: 40px 0px;
+border-color: #727878;
+opacity: 0.5;
+}
+
+#border {
+
+  background-color: #111;
+  color: #fff;
+  padding: 28px;
+  font-size: 35px;
+  letter-spacing: 10px;
+  z-index: -1;
+  border-radius: 5px 5;
+}
+
+
+.background{
+
+    height: 100%; 
+    position: relative;
+    z-index: -2;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background2{
+
+    height: 100%; 
+    position: relative;
+    z-index: -2;
+    background: url("mountain.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-white { background: #fff; }
+
+#bg2{background: url("mountain.jpg");}
+
+.container {padding: 40px 180px;}
+
+.face{
+	position: relative;
+	padding-top:15px;
+	padding-right:15px;
+	padding-left:15px;
+}
+
+	</style>
+</head>
+<body>  
+
+<div  class="background2">
+
+	<div id="caption">
+		<span id="border">Nathan Dsouza</span>			
+</div>
+
+
+			
+</div> 
+
+
+<div class="background-white">
+	<div class="container">
+	
+		<h1>About Me</h1>	
+		<hr>
+		<div class="face">
+			<img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+		</div>
+		 
+	 
+	 </div>	 
+</div>
+
+
+
+<script>
+
+
+<!-- window.onscroll = function() {myFunction4()}; -->
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+var caption = document.getElementById("caption");
+var st = caption.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+function myFunction4() {
+  if (window.pageYOffset >= st) {
+    caption.style.position="fixed";
+    caption.style.top="0";
+    document.getElementById("border").style.padding="3px";
+    document.getElementById("border").style.backgroundColor="transparent";
+
+  }
+} 
+
+
+</script>
+
+
+</body>
+</html>
