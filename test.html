@@ -69,18 +69,6 @@ opacity: 0.5;
 }
 
 
-.background{
-
-    height: 100%; 
-    position: relative;
-    z-index: -2;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .background2{
 
     height: 100%; 
@@ -91,6 +79,7 @@ opacity: 0.5;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 10px;
 }
 
 .background-white { background: #fff; height: 100vh; }
@@ -115,10 +104,11 @@ opacity: 0.5;
             margin-right: auto;
             display: block;
         }
-        .nav ul {padding-left: 0px;}
-        .nav  { border: 0px; background-color: #222222; position: fixed; top: 60px; right: 5%; width: 110px; z-index: 999; }
-        .nav a {text-decoration: none; color: white; }
-        .nav li {display: block; position: relative; float: none; height: 80px; line-height: 80px; text-align: center;}
+        
+        #nav ul {padding-left: 0px;}
+        #nav  { border: 0px; background-color: #222222; position: absolute;  top: 100%; right: 5%; width: 110px; z-index: 999; }
+        #nav a {text-decoration: none; color: white; }
+        #nav li {display: block; position: relative; float: none; height: 80px; line-height: 80px; text-align: center;}
         
         
         
@@ -136,7 +126,10 @@ opacity: 0.5;
 	
 </div> 
 
-    <div class ="nav">
+   
+
+<div class="background-white" >
+     <div id ="nav">
     <ul>
     <li>
         <a href="#about"=>About ME</a>
@@ -155,8 +148,6 @@ opacity: 0.5;
     
     
     </div>
-
-<div class="background-white" >
 	<div id="about" class="container">
         <div class="row">
 	
@@ -179,6 +170,7 @@ opacity: 0.5;
 </div>
 
 
+    
 <div class="background-grey" style="padding-bottom: 100px;" >
 	<div id="experiences" class="container">
         <div class="row">
@@ -283,18 +275,23 @@ opacity: 0.5;
 <script>
 
 
-<!-- window.onscroll = function() {myFunction4()}; -->
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+window.onscroll = function() {myFunction()}; 
+var about = document.getElementById("about");
+var nav = document.getElementById("nav");
+var sticky = about.offsetTop - 60;
 
 var caption = document.getElementById("caption");
 var st = caption.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+    nav.style.position ="fixed";
+      nav.style.top = "60px";
+      //navbar.classList.add("sticky")
+  }  else {
+   nav.style.position ="absolute";
+      nav.style.top ="100%";
+      // navbar.classList.remove("sticky");
   }
 }
 
