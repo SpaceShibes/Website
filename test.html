@@ -2,8 +2,10 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>:)</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style type="text/css">
 
 body, html, h1, p {
@@ -11,7 +13,8 @@ body, html, h1, p {
   font-weight: normal;
   height: 100%;
 }
-
+p {font-family: 'Roboto', sans-serif;
+        color: #434242; }
 /*div{
 display: block;
 }*/
@@ -25,6 +28,8 @@ h1 {
   font-weight: 300;
   margin: 0 0 20px 0;
   text-align: center;
+    color: #434242;
+    
    
 }
         h2 {
@@ -61,7 +66,7 @@ opacity: 0.5;
   border-radius: 5px 5;
 }
 
-/*B2C197  #9FADAA B3DEC1  C3DDCC*/
+/*B2C197  #9FADAA B3DEC1  C3DDCC EEE2DF   EFD6AC    #DAD7CD*/
 .background2{
 
     height: 100%; 
@@ -75,11 +80,11 @@ opacity: 0.5;
     padding-bottom: 10px;
 }
 
-.background-white { background: #DAD7CD; 
+.background-white { background: #EEE2DF; 
     margin: 0 auto;
     max-width: 1250px; }
         
-.background-grey { background: #C3DDCC;
+.background-grey { background: #DAD7CD;
          margin: 0 auto;
     max-width: 1250px; }
         
@@ -103,8 +108,9 @@ img{
 }
         
 #nav ul {padding-left: 0px;}
- #nav  { border: 0px; background-color: #111; position: absolute;  top: 100%; right: 5%; width: 110px; z-index: 999; opacity: .9; }
+ #nav  { border: 0px; background-color: #434242; position: absolute;  top: 100%; right: 5%; width: 110px; z-index: 999;  }
  #nav a {text-decoration: none; color: white; }
+        #nav a:hover {color: white; opacity: .5; }
  #nav li {display: block; position: relative; float: none; height: 80px; line-height: 80px; text-align: center;}
         
         
@@ -129,7 +135,7 @@ img{
      <div id ="nav">
     <ul>
     <li>
-        <a href="#about"=>About ME</a>
+        <a href="#about"=>About Me</a>
         </li>
         <li>
         <a href="#experiences"=>Experiences</a>
@@ -215,7 +221,7 @@ img{
 
 <div class="background-white" >
 	<div id="projects" class="container">
-        <div class="row" style="margin-bottom: 200px;">
+        <div class="row" style="overflow: hidden;">
 	
 		<h1>Projects</h1>	
 		<hr>
@@ -234,7 +240,7 @@ img{
 </div>
 
 
-<div class="background-darkgrey" style="padding-bottom: 100px;">
+<div class="background-darkgrey" >
 	<div id="contact" class="container"style="margin: 0 auto;
     max-width: 1250px;">
         <div class="row">
@@ -243,8 +249,8 @@ img{
 		<hr>
         <div>
              
-        <div class="face"  style="margin: 0 auto; text-align: center; color: white;" > 
-            <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+        <div class="face"  style="margin: 0 auto; text-align: center;" > 
+            <p style="color: white;"> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
             </p>
         </div>
         </div>
@@ -266,8 +272,6 @@ var about = document.getElementById("about");
 var nav = document.getElementById("nav");
 var sticky = about.offsetTop;
 
-var caption = document.getElementById("caption");
-var st = caption.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
@@ -281,17 +285,14 @@ function myFunction() {
   }
 }
 
-function myFunction4() {
-  if (window.pageYOffset >= st) {
-    caption.style.position="fixed";
-    caption.style.top="0";
-    document.getElementById("border").style.padding="3px";
-    document.getElementById("border").style.backgroundColor="transparent";
 
-  }
-} 
+$("#nav a").click(function(event) {
+    event.preventDefault();
 
-
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 750);
+});
 </script>
 
 
