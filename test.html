@@ -18,7 +18,11 @@ p {font-family: 'Roboto', sans-serif;
 /*div{
 display: block;
 }*/
-        
+        html{ background: url("mountain.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;}
 .row {
     margin-right: -15px;
     margin-left: -15px;
@@ -66,10 +70,23 @@ opacity: 0.5;
   border-radius: 5px 5;
 }
 
-/*B2C197  #9FADAA B3DEC1  C3DDCC EEE2DF   EFD6AC    #DAD7CD*/
+/*B2C197  #9FADAA B3DEC1  C3DDCC EEE2DF   EFD6AC    #DAD7CD 434242*/
 .background2{
 
     height: 100%; 
+    position: relative;
+    z-index: -2;
+    background: url("mountain.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+        
+        .background3{
+
+    height: 5%; 
     position: relative;
     z-index: -2;
     background: url("mountain.jpg");
@@ -85,12 +102,12 @@ opacity: 0.5;
     max-width: 1250px; }
         
 .background-grey { background: #DAD7CD;
+    overflow: auto;
          margin: 0 auto;
     max-width: 1250px; }
         
-        .background-darkgrey { background: #434242; }
+        .background-darkgrey { background: #000; opacity: 0.8; }
 
-#bg2{background: url("mountain.jpg");}
 
 .container {padding: 40px 180px;}
 
@@ -108,13 +125,16 @@ img{
 }
         
 #nav ul {padding-left: 0px;}
- #nav  { border: 0px; background-color: #434242; position: absolute;  top: 100%; right: 5%; width: 110px; z-index: 999;  }
+ #nav  { border: 0px; background-color: #000; position: absolute;  top: 100%; right: 5%; width: 110px; z-index: 999; opacity: 0.85; }
  #nav a {text-decoration: none; color: white; }
         #nav a:hover {color: white; opacity: .5; }
  #nav li {display: block; position: relative; float: none; height: 80px; line-height: 80px; text-align: center;}
         
         
-        
+        #hidden{
+            position: fixed;
+            top: 
+        }
         
 	</style>
 </head>
@@ -131,7 +151,7 @@ img{
 
    
 
-<div class="background-white" >
+<div class="background-white"  >
      <div id ="nav">
     <ul>
     <li>
@@ -172,8 +192,9 @@ img{
 	 </div>	 
 </div>
 
-
-    
+ <div  class="background3">
+		
+</div>   
 <div class="background-grey"  >
 	<div id="experiences" class="container" style="margin-left: auto; margin-right: auto;
     max-width: 1250px;" >
@@ -218,7 +239,9 @@ img{
         </div>	
 	 </div>	 
 </div>
-
+<div  class="background3">
+		
+</div>  
 <div class="background-white" >
 	<div id="projects" class="container">
         <div class="row" style="overflow: hidden;">
@@ -238,7 +261,9 @@ img{
 	 
 	 </div>	 
 </div>
-
+<div  class="background3">
+		
+</div>  
 
 <div class="background-darkgrey" >
 	<div id="contact" class="container"style="margin: 0 auto;
