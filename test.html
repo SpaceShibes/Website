@@ -14,10 +14,15 @@ body, html, h1, p {
   height: 100%;
 }
 p {font-family: 'Roboto', sans-serif;
-        color: #434242; }
-/*div{
-display: block;
-}*/
+        color: #434242; 
+         margin-top: 0px;}
+        
+        
+        a {
+            text-decoration: none;
+            color: cornflowerblue;
+            
+        }
         html{ background: url("mountain.jpg");
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -45,7 +50,7 @@ color: white;
 }
   
 #caption {
-  position: fixed;
+  position: relative;
   top: 40%;
   width: 100%;
   text-align: center;
@@ -111,18 +116,24 @@ opacity: 0.5;
 
 .container {padding: 40px 180px;}
 
-.face{
+<!-.face{
 	position: relative;
 	padding-top:15px;
 	padding-right:15px;
 	padding-left:15px;
     
-    }
-img{
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-}
+    }-->
+
+        
+        .logo{ float: left; width: 246px;}
+        .descript{ float: left;width: 600px;}
+        
+        .blub:after{
+           content: "";
+    display: table;
+    clear: both; 
+        }
+        
         
 #nav ul {padding-left: 0px;}
  #nav  { border: 0px; background-color: #000; position: absolute;  top: 100%; right: 5%; width: 110px; z-index: 999; opacity: 0.85; }
@@ -177,12 +188,12 @@ img{
 		<h1>About Me</h1>	
 		<hr>
 		<div>
-			<img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+			<img style="margin-left: auto; margin-right: auto; display: block;" src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246" class="center" >
 		</div>
         <div>
              
         <div class="face" style="margin: 0 auto; text-align: center;"> 
-            <p>Hey, I'm a South African-born American business magnate, investor and engineer.I am the founder, CEO, and lead designer of SpaceX; co-founder, CEO, and product architect of Tesla, Inc.; and co-founder and CEO of Neuralink. In December 2016, I was ranked 21st on the Forbes list of The World's Most Powerful People. As of February 2018, I have a net worth of $20.8 billion and am listed by Forbes as the 53rd-richest person in the world.
+            <p style="margin-top: 15px;">Hey I'm Nathan, a third year student at the Univeristy of Waterloo studying Honours Computer Science. a South African-born American business magnate, investor and engineer.I am the founder, CEO, and lead designer of SpaceX; co-founder, CEO, and product architect of Tesla, Inc.; and co-founder and CEO of Neuralink. In December 2016, I was ranked 21st on the Forbes list of The World's Most Powerful People. As of February 2018, I have a net worth of $20.8 billion and am listed by Forbes as the 53rd-richest person in the world.
             </p>
         </div>
         </div>
@@ -192,9 +203,8 @@ img{
 	 </div>	 
 </div>
 
- <div  class="background3">
-		
-</div>   
+    <div  class="background3"> </div>  
+    
 <div class="background-grey"  >
 	<div id="experiences" class="container" style="margin-left: auto; margin-right: auto;
     max-width: 1250px;" >
@@ -202,35 +212,65 @@ img{
 	
 		  <h1>Experiences</h1>	
 		  <hr>
-            <div style="margin-bottom: 200px;">
-		    <div class="face" style="float: left; margin-right: 50px;" >
-			 <img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+            
+            
+            <div class="blub" style="margin-bottom: 50px;">
+		    <div class="logo face" style= "margin-right: 50px;" >
+			 <img src= "visioncritical.png"  width="246">
 		    </div>
             
-             <div class="face" style="margin-right: 50px;" > 
-                    <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+             <div class="descript face"  > 
+                    <p> Currently here!
+                    </p>
+                </div>
+            
+                
+            </div>
+            <div class ="blub" style="margin-bottom: 50px;">
+            <div class="logo face" style="margin-right: 50px;" >
+			 <img src= "kik.png" width="246">
+		    </div>
+            
+             <div class="descript face" > 
+                    <p>• Developed and executed test strategies for KIK native clients and mobile web
+products, creating a bug free experience for millions of users<br><br>
+• Successfully handled multiple projects and ensured smooth releases by scoping,
+planning and scheduling numerous product releases.<br><br>
+• Collaborated with development teams across the organization to create functional
+test plans, performed feature and regression testing, and detailed issue reporting
                     </p>
                 </div>
             
             </div>
-            <div style="margin-bottom: 200px;">
-		    <div class="face" style="float: left; margin-right: 50px;" >
-			 <img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+            <div class="blub" style= "margin-bottom: 50px;">
+		    <div class="logo face" style="margin-right: 50px;" >
+			 <img src= "climax.jpg"width="246">
 		    </div>
             
-             <div class="face" style="margin-right: 50px;" > 
-                    <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+             <div class="descript face" > 
+                    <p> • Planned, conducted and monitored tests of client solutions to ensure product quality<br><br>
+• Documented internal audits and other quality assurance activities<br><br>
+• Investigated client complaints and non-conformance issues<br><br>
+• Created and executed manual tests for both software and systems<br><br>
+• Prepared several reports daily to communicate outcomes of quality activities,
+extensively accomplished via TestRail and LeanKit. Reports were then used to fix all
+quality issues.
                     </p>
                 </div>
             
             </div>
-            <div >
-		    <div class="face" style="float: left; margin-right: 50px;" >
-			 <img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+            <div style="overflow: hidden; margin-bottom: 50px;">
+		    <div class="logo face" style="margin-right: 50px;" >
+			 <img src= "flir.png" width="246">
 		    </div>
             
-             <div class="face" style="margin-right: 50px;" > 
-                    <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+             <div class="descript face"> 
+                    <p> • Worked exclusively with Excel and Systems, Applications and Products (SAP) software
+to organize documentation in the Supply Chain Department<br><br>
+• Successfully worked and cooperated with coworkers to process work orders under
+minimal supervision<br><br>
+• Maintained Inbound Control Log and followed-up with factories on open Purchase
+Orders
                     </p>
                 </div>
             
@@ -239,21 +279,19 @@ img{
         </div>	
 	 </div>	 
 </div>
-<div  class="background3">
-		
-</div>  
+    
+    
+<div  class="background3"></div>  
 <div class="background-white" >
 	<div id="projects" class="container">
-        <div class="row" style="overflow: hidden;">
+        <div class="row">
 	
 		<h1>Projects</h1>	
 		<hr>
-		<div class="face" style="float: left; margin-right: 50px;" >
-			<img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
-		</div>
+		
              
-        <div class="face" style="margin-right: 50px;" > 
-            <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+        <div class="face" style="text-align: center;"> 
+            <p> Projects coming soon! After finishing up this website I plan to move into android app development. Stay updated with my work and progress at my <a href="http://www.github.com/NathanDsouza">github</a>.
             </p>
         </div>
         </div>
