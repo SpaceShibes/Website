@@ -13,12 +13,29 @@ body, html, h1, p {
   font-weight: normal;
   height: 100%;
 }
+       
 p {font-family: 'Roboto', sans-serif;
-        color: #434242; }
-/*div{
-display: block;
-}*/
+        color: #434242; 
+         margin-top: 0px;}
+        h3{
+            
+             margin-top: -10px;
+        }
+        h4{
+             margin-top: -10px;
+        }
         
+        
+        a {
+            text-decoration: none;
+            color: cornflowerblue;
+            
+        }
+        html{ background: url("mountain.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;}
 .row {
     margin-right: -15px;
     margin-left: -15px;
@@ -28,7 +45,6 @@ h1 {
   font-weight: 300;
   margin: 0 0 20px 0;
   text-align: center;
-    color: #434242;
     
    
 }
@@ -41,7 +57,7 @@ color: white;
 }
   
 #caption {
-  position: fixed;
+  position: relative;
   top: 40%;
   width: 100%;
   text-align: center;
@@ -64,9 +80,10 @@ opacity: 0.5;
   letter-spacing: 10px;
   z-index: -1;
   border-radius: 5px 5;
+    
 }
 
-/*B2C197  #9FADAA B3DEC1  C3DDCC EEE2DF   EFD6AC    #DAD7CD*/
+/*B2C197  #9FADAA B3DEC1  C3DDCC EEE2DF   EFD6AC    #DAD7CD 434242*/
 .background2{
 
     height: 100%; 
@@ -79,42 +96,67 @@ opacity: 0.5;
     background-size: cover;
     padding-bottom: 10px;
 }
+        
+        .background3{
+
+    height: 5%; 
+    position: relative;
+    z-index: -2;
+    background: url("mountain.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
 
 .background-white { background: #EEE2DF; 
     margin: 0 auto;
-    max-width: 1250px; }
+    max-width: 1000px;
+        box-shadow: 10px 10px 50px;}
         
 .background-grey { background: #DAD7CD;
+    overflow: auto;
          margin: 0 auto;
-    max-width: 1250px; }
+    max-width: 1000px; 
+        box-shadow: 10px 10px 50px;}
         
-        .background-darkgrey { background: #434242; }
+        .background-darkgrey { background: #000; opacity: 0.8; box-shadow: 10px 10px 50px; }
 
-#bg2{background: url("mountain.jpg");}
 
-.container {padding: 40px 180px;}
+.container {padding: 40px 130px;}
 
-.face{
+<!-.face{
 	position: relative;
 	padding-top:15px;
 	padding-right:15px;
 	padding-left:15px;
     
-    }
-img{
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-}
+    }-->
+
         
-#nav ul {padding-left: 0px;}
- #nav  { border: 0px; background-color: #434242; position: absolute;  top: 100%; right: 5%; width: 110px; z-index: 999;  }
- #nav a {text-decoration: none; color: white; }
-        #nav a:hover {color: white; opacity: .5; }
- #nav li {display: block; position: relative; float: none; height: 80px; line-height: 80px; text-align: center;}
+        .logo{  float: left; width: 150px;}
+        .descript{ float: left;width: 500px;}
         
+        .blub:after{
+           content: "";
+    display: table;
+    clear: both; 
+        }
         
         
+#nav ul {padding-left: 0px; margin-top: 0px; margin-bottom: 0px; list-style-type: none;}
+ #nav  { border: 0px; background-color: #000; position: absolute;  top: 100%; right: 0%; width: 110px; z-index: 999; opacity: 0.85; box-shadow: 10px 10px 50px; }
+ #nav a {text-decoration: none; color: white; display: block;  }
+       
+        #nav li {text-align: center; position: relative; float: none; line-height: 80px; height: 80px; }
+        #nav li:hover{background-color:  #434242;}
+        
+        
+        #hidden{
+            position: fixed;
+            top: 
+        }
         
 	</style>
 </head>
@@ -131,11 +173,11 @@ img{
 
    
 
-<div class="background-white" >
+<div class="background-white"  >
      <div id ="nav">
     <ul>
-    <li>
-        <a href="#about"=>About Me</a>
+    <li >
+        <a href="#about">About Me</a>
         </li>
         <li>
         <a href="#experiences"=>Experiences</a>
@@ -151,18 +193,18 @@ img{
     
     
     </div>
-	<div id="about" class="container">
+	<div id="about" class="container" >
         <div class="row">
 	
 		<h1>About Me</h1>	
 		<hr>
 		<div>
-			<img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+			<img style="margin-left: auto; margin-right: auto; display: block;" src= "terry.png" alt="Nathan D'souza" width="400" height="246" class="center" >
 		</div>
         <div>
              
-        <div class="face" style="margin: 0 auto; text-align: center;"> 
-            <p>Hey, I'm a South African-born American business magnate, investor and engineer.I am the founder, CEO, and lead designer of SpaceX; co-founder, CEO, and product architect of Tesla, Inc.; and co-founder and CEO of Neuralink. In December 2016, I was ranked 21st on the Forbes list of The World's Most Powerful People. As of February 2018, I have a net worth of $20.8 billion and am listed by Forbes as the 53rd-richest person in the world.
+        <div class="face" style=" text-align: center;"> 
+            <p style="margin-top: 30px;">Hey I'm Nathan, a third year student at the Univeristy of Waterloo studying Computer Science. I've got a passion for creating and I love learning new languages and technologies. This website is a work in progress and I'll continue to add more features every now and then. In the meantime I hope to move into Android App development and start pumping out some app ideas I have. Feel free to  <a href="https://www.linkedin.com/in/nathan-d-souza-a33851145/">connect</a> with me or checkout my <a href="http://www.github.com/NathanDsouza">github</a>!<br><br> Stay Frosty,<br> Nathan
             </p>
         </div>
         </div>
@@ -172,7 +214,7 @@ img{
 	 </div>	 
 </div>
 
-
+    <div  class="background3"> </div>  
     
 <div class="background-grey"  >
 	<div id="experiences" class="container" style="margin-left: auto; margin-right: auto;
@@ -181,35 +223,85 @@ img{
 	
 		  <h1>Experiences</h1>	
 		  <hr>
-            <div style="margin-bottom: 200px;">
-		    <div class="face" style="float: left; margin-right: 50px;" >
-			 <img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+            
+            
+            <div class="blub" style="margin-bottom: 50px;">
+		    <div class="logo face" style= "margin-right: 80px;" >
+			 <img src= "visioncritical.png"  width="150" class="center">
 		    </div>
             
-             <div class="face" style="margin-right: 50px;" > 
-                    <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+             <div class="descript face"  > 
+                 <h3> Vision Critical              
+                 </h3>
+                 <h4> Software Developer (January - August 2018)
+                 
+                 </h4>
+                    <p> Currently here! Software Developing!
+                    </p>
+                </div>
+            
+                
+            </div>
+            <div class ="blub" style="margin-bottom: 50px;">
+            <div class="logo face" style="margin-right: 80px;" >
+			 <img src= "kik.png" width="150">
+		    </div>
+            
+             <div class="descript face" > 
+                  <h3> Kik
+                 </h3>
+                 <h4> Quality Assurance Analyst (May - August 2017)
+                 
+                 </h4>
+                    <p>• Developed and executed test strategies for KIK native clients and mobile web
+products, creating a bug free experience for millions of users<br>
+• Successfully handled multiple projects and ensured smooth releases by scoping,
+planning and scheduling numerous product releases.<br>
+• Collaborated with development teams across the organization to create functional
+test plans, performed feature and regression testing, and detailed issue reporting
                     </p>
                 </div>
             
             </div>
-            <div style="margin-bottom: 200px;">
-		    <div class="face" style="float: left; margin-right: 50px;" >
-			 <img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+            <div class="blub" style= "margin-bottom: 50px;">
+		    <div class="logo face" style="margin-right: 80px;" >
+			 <img src= "climax.jpg"width="150">
 		    </div>
             
-             <div class="face" style="margin-right: 50px;" > 
-                    <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+             <div class="descript face" > 
+                  <h3> Climax Media          
+                 </h3>
+                 <h4> Quality Assurance Analyst (May - August 2016)
+                 
+                 </h4>
+                    <p> • Planned, conducted and monitored tests of client solutions to ensure product quality<br>
+• Documented internal audits and other quality assurance activities<br>
+• Investigated client complaints and non-conformance issues<br>
+• Created and executed manual tests for both software and systems<br>
+• Prepared several reports daily to communicate outcomes of quality activities,
+extensively accomplished via TestRail and LeanKit. Reports were then used to fix all
+quality issues.
                     </p>
                 </div>
             
             </div>
-            <div >
-		    <div class="face" style="float: left; margin-right: 50px;" >
-			 <img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
+            <div style="overflow: hidden; margin-bottom: 50px;">
+		    <div class="logo face" style="margin-right: 80px;" >
+			 <img src= "flir.png" width="150">
 		    </div>
             
-             <div class="face" style="margin-right: 50px;" > 
-                    <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+             <div class="descript face"> 
+                  <h3> Flir              
+                 </h3>
+                 <h4> Supply Chain Coordinator (January - August 2018)
+                 
+                 </h4>
+                    <p> • Worked exclusively with Excel and Systems, Applications and Products (SAP) software
+to organize documentation in the Supply Chain Department<br>
+• Successfully worked and cooperated with coworkers to process work orders under
+minimal supervision<br>
+• Maintained Inbound Control Log and followed-up with factories on open Purchase
+Orders
                     </p>
                 </div>
             
@@ -218,19 +310,19 @@ img{
         </div>	
 	 </div>	 
 </div>
-
+    
+    
+<div  class="background3"></div>  
 <div class="background-white" >
 	<div id="projects" class="container">
-        <div class="row" style="overflow: hidden;">
+        <div class="row">
 	
 		<h1>Projects</h1>	
 		<hr>
-		<div class="face" style="float: left; margin-right: 50px;" >
-			<img src= "Elon.jpg" alt="Nathan D'souza" width="246" height="246">
-		</div>
+		
              
-        <div class="face" style="margin-right: 50px;" > 
-            <p> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
+        <div class="face" style="text-align: center;"> 
+            <p> Projects coming soon! After finishing up this website I plan to move into android app development. Stay updated with my progress through my <a href="http://www.github.com/NathanDsouza">github</a>!
             </p>
         </div>
         </div>
@@ -238,7 +330,9 @@ img{
 	 
 	 </div>	 
 </div>
-
+<div  class="background3">
+		
+</div>  
 
 <div class="background-darkgrey" >
 	<div id="contact" class="container"style="margin: 0 auto;
@@ -250,8 +344,8 @@ img{
         <div>
              
         <div class="face"  style="margin: 0 auto; text-align: center;" > 
-            <p style="color: white;"> Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum.  Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem.Lorem Ipsum, Lorem Ipsum. Lorem Ipsum? Lorem. Ipsum. Ip. Sum. Lorem lorem, Ipsum lorem. Ipsum Lorem? No. WRong you idiot. 
-            </p>
+            <h4 style="color: white;"> <a href="http://www.github.com/NathanDsouza">Github</a> <a href="https://www.linkedin.com/in/nathan-d-souza-a33851145/">LinkedIn</a> <a>Resume</a> <br> Nathan.M.Dsouza@Gmail.com
+            </h4>
         </div>
         </div>
         </div>
@@ -286,11 +380,11 @@ function myFunction() {
 }
 
 
-$("#nav a").click(function(event) {
+$("#nav li").click(function(event) {
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
+        scrollTop: $($("a", this).attr('href')).offset().top
     }, 750);
 });
 </script>
