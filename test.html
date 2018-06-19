@@ -388,9 +388,10 @@ $("#nav li").click(function(event) {
     }, 750);
 });
     
+    
      function loopDown(){
-        $(".arrowpic").animate({
-            height : 85
+        $("#arrow").animate({
+            bottom : "15px"
             },
             750, function() {
             loopUp();
@@ -398,8 +399,8 @@ $("#nav li").click(function(event) {
     }
 
     function loopUp(){
-        $(".arrowpic").animate({
-            height : 80
+        $("#arrow").animate({
+            bottom : 0
             },
             750, function() {
             loopDown();
