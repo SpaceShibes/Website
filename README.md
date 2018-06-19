@@ -7,4 +7,12 @@ Updates and Issues:
 
 - My next issue was designing the site itself. With html/css/javascript I found many resources to learn it and found that this wouldn't be a huge problem for me. Rather what I struggled with was designing the site itself. The code I could learn but I had no clue how to make the site actually look nice and finding resources for that proved to be a bit tougher. What I ended up doing is that I went through countless sites, looking at features I liked and disliked. This in turn gave my a better idea of what I would want my site to look like. 
 
-- Post-Receive Hook Notes: Just as a reminder to yourself on how your hook works, there are two branches you will mainly use, dev and production. Do work on dev, when satisfied merge it into production (note you have to be on the prod branch when doing this) and then push to the deploy_server remote repo (git push deploy_server production). Also remember to push the prod branch to this repo as well to track progress. 
+- Post-Receive Hook Notes: Just as a reminder to yourself on how your hook works, there are two branches you will mainly use, dev and production. Do work on dev, when satisfied merge it into production (note you have to be on the prod branch when doing this) and then push to the deploy_server remote repo (git push deploy_server production). Also remember to push the prod branch to this repo as well to track progress.
+
+- First draft of the website is finished! I'll be adding new features every now and then, but for the time being I'm finished and will be moving onto other projects.
+
+Things I would still like to do:
+- Make more responsive 
+- Add some more fun javascript features (like sections loading as you scroll)
+- Change up colours, maybe redesign to make it more vibrant?
+- Personalize, add more sections for hobbies and photography
