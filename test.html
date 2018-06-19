@@ -153,11 +153,9 @@ opacity: 0.5;
         #nav li:hover{background-color:  #434242;}
         
         
-        #hidden{
-            position: fixed;
-            top: 
+        #arrow{
+            bottom: 0; position: absolute; 
         }
-        
 	</style>
 </head>
 <body>  
@@ -168,7 +166,9 @@ opacity: 0.5;
 		<span id="border">Nathan D'souza</span>			
 </div>
 
-	
+	  <div id=arrow> 
+          <img class="arrowpic" src="arrow.png" width="110" height="80" >
+    </div>
 </div> 
 
    
@@ -177,7 +177,7 @@ opacity: 0.5;
      <div id ="nav">
     <ul>
     <li >
-        <a href="#about">About Me</a>
+         <a href="#about"=>About Me</a>
         </li>
         <li>
         <a href="#experiences"=>Experiences</a>
@@ -199,7 +199,7 @@ opacity: 0.5;
 		<h1>About Me</h1>	
 		<hr>
 		<div>
-			<img style="margin-left: auto; margin-right: auto; display: block; box-shadow: 2px 2px 20px;" src= "nate.jpg" alt="Nathan D'souza" width="230" height="300" class="center" >
+			<img style="margin-left: auto; margin-right: auto; display: block; box-shadow: 2px 2px 20px;" src= "nate.png" alt="Nathan D'souza" width="230" height="300">
 		</div>
         <div>
              
@@ -387,6 +387,25 @@ $("#nav li").click(function(event) {
         scrollTop: $($("a", this).attr('href')).offset().top
     }, 750);
 });
+    
+     function loopDown(){
+        $(".arrowpic").animate({
+            height : 85
+            },
+            750, function() {
+            loopUp();
+        });
+    }
+
+    function loopUp(){
+        $(".arrowpic").animate({
+            height : 80
+            },
+            750, function() {
+            loopDown();
+        });
+    }
+    loopDown();
 </script>
 
 
