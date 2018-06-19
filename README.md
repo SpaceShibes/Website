@@ -16,3 +16,4 @@ Things I would still like to do:
 - Add some more fun javascript features (like sections loading as you scroll)
 - Change up colours, maybe redesign to make it more vibrant?
 - Personalize, add more sections for hobbies and photography
+- Clean up code!!
