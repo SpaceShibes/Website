@@ -2,91 +2,411 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>:)</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<style type="text/css">
-	
 
 body, html, h1, p {
   font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: normal;
   height: 100%;
 }
-
-
+       
+p {font-family: 'Roboto', sans-serif;
+        color: #434242; 
+         margin-top: 0px;}
+        h3{
+            
+             margin-top: -10px;
+        }
+        h4{
+             margin-top: -10px;
+        }
+        
+        
+        a {
+            text-decoration: none;
+            color: cornflowerblue;
+            
+        }
+        html{ background: url("mountain.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
 h1 {
   font-size: 48px;
   font-weight: 300;
   margin: 0 0 20px 0;
   text-align: center;
+    
+   
 }
-
+        h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+  text-align: center;
+color: white;
+}
+  
 #caption {
-  position: fixed;
+  position: relative;
   top: 40%;
   width: 100%;
   text-align: center;
-  color: #000;
+
   opacity: .80;
 
 }
+hr{
+margin: 40px 0px;
+border-color: #727878;
+opacity: 0.5;
+}
 
 #border {
+
   background-color: #111;
   color: #fff;
   padding: 28px;
   font-size: 35px;
   letter-spacing: 10px;
   z-index: -1;
+  border-radius: 5px 5;
+    
 }
 
+/*B2C197  #9FADAA B3DEC1  C3DDCC EEE2DF   EFD6AC    #DAD7CD 434242*/
+.background2{
 
-.background{
+    height: 100%; 
+    position: relative;
+    z-index: -2;
+    background: url("mountain.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+        
+        .background3{
 
-  height: 100%; 
-  position: relative;
-  z-index: -2;
-/* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+    height: 5%; 
+    position: relative;
+    z-index: -2;
+    background: url("mountain.jpg");
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
 }
 
-#bg1{
-  background-image: url("sunsetS.jpeg");
-}
+.background-white { background: #EEE2DF; 
+    margin: 0 auto;
+    max-width: 1000px;
+        box-shadow: 10px 10px 50px;}
+        
+.background-grey { background: #DAD7CD;
+    overflow: auto;
+         margin: 0 auto;
+    max-width: 1000px; 
+        box-shadow: 10px 10px 50px;}
+        
+        .background-darkgrey { background: #000; opacity: 0.8; box-shadow: 10px 10px 50px; }
 
-#bg2{
-  background-image: url("mountain.jpg");
-}
 
-#bg3{
-  background-image: url("forest.jpg");
-}
+.container {padding: 40px 130px;}
 
-#bg4{
-  background-image: url("autumnS.jpg");
-}
+<!-.face{
+	position: relative;
+	padding-top:15px;
+	padding-right:15px;
+	padding-left:15px;
+    
+    }-->
 
-#bg5{
-  background-image: url("winterS.jpeg");
-}
-
+        
+        .logo{  float: left; width: 150px;}
+        .descript{ float: left;width: 500px;}
+        
+        .blub:after{
+           content: "";
+    display: table;
+    clear: both; 
+        }
+        
+        
+#nav ul {padding-left: 0px; margin-top: 0px; margin-bottom: 0px; list-style-type: none;}
+ #nav  { border: 0px; background-color: #000; position: absolute;  top: 100%; left: 0%; width: 110px; z-index: 999; opacity: 0.80; box-shadow: 10px 10px 50px; }
+ #nav a {text-decoration: none; color: white; display: block;  }
+       
+        #nav li {text-align: center; position: relative; float: none; line-height: 80px; height: 80px; }
+        #nav li:hover{background-color:  #434242;}
+        
+        
+        #arrow{
+            bottom: 0; position: absolute; 
+        }
 	</style>
 </head>
 <body>  
 
-	
-<div id="caption">
-<span id="border">Nathan Dsouza</span>
+<div  class="background2">
+
+	<div id="caption">
+		<span id="border">Nathan D'souza</span>			
 </div>
-<div class="background", id="bg1"></div>
-<div class="background", id="bg2"></div>
-<div class="background", id="bg3"></div>
-<div class="background", id="bg4"></div>
-<div class="background", id="bg5"></div>
+
+	  <div id=arrow> 
+          <img class="arrowpic" src="arrow.png" width="110" height="80" >
+    </div>
+</div> 
+
+   
+
+<div class="background-white"  >
+     <div id ="nav">
+    <ul>
+    <li >
+         <a href="#about"=>About Me</a>
+        </li>
+        <li>
+        <a href="#experiences"=>Experiences</a>
+        </li>
+        <li>
+        <a href="#projects"=>Projects</a>
+        </li>
+        <li>
+        <a href="#contact"=>Contact</a>
+        </li>
+    
+    </ul>
+    
+    
+    </div>
+	<div id="about" class="container" >
+        <div class="row">
+	
+		<h1>About Me</h1>	
+		<hr>
+		<div>
+			<img style="margin-left: auto; margin-right: auto; display: block; box-shadow: 2px 2px 20px;" src= "nate.png" alt="Nathan D'souza" width="230" height="300">
+		</div>
+        <div>
+             
+        <div class="face" style=" text-align: center;"> 
+            <p style="margin-top: 30px;">Hey I'm Nathan, a third year student at the Univeristy of Waterloo studying Computer Science. I've got a passion for creating and I love learning new languages and technologies. This website is a work in progress and I'll continue to add more features every now and then. In the meantime I hope to move into Android App development and start pumping out some app ideas I have. Feel free to  <a href="https://www.linkedin.com/in/nathan-d-souza-a33851145/">connect</a> with me or checkout my <a href="http://www.github.com/NathanDsouza">github</a>!<br><br> Stay Frosty,<br> Nathan
+            </p>
+        </div>
+        </div>
+        </div>
+		 
+	 
+	 </div>	 
+</div>
+
+    <div  class="background3"> </div>  
+    
+<div class="background-grey"  >
+	<div id="experiences" class="container" style="margin-left: auto; margin-right: auto;
+    max-width: 1250px;" >
+        <div class="row" style="overflow: hidden;" >
+	
+		  <h1>Experiences</h1>	
+		  <hr>
+            
+            
+            <div class="blub" style="margin-bottom: 50px;">
+		    <div class="logo face" style= "margin-right: 80px;" >
+			 <img src= "visioncritical.png"  width="150" class="center">
+		    </div>
+            
+             <div class="descript face"  > 
+                 <h3> Vision Critical              
+                 </h3>
+                 <h4> Software Developer (January - August 2018)
+                 
+                 </h4>
+                    <p> Currently here! Software Developing!
+                    </p>
+                </div>
+            
+                
+            </div>
+            <div class ="blub" style="margin-bottom: 50px;">
+            <div class="logo face" style="margin-right: 80px;" >
+			 <img src= "kik.png" width="150">
+		    </div>
+            
+             <div class="descript face" > 
+                  <h3> Kik
+                 </h3>
+                 <h4> Quality Assurance Analyst (May - August 2017)
+                 
+                 </h4>
+                    <p>• Developed and executed test strategies for KIK native clients and mobile web
+products, creating a bug free experience for millions of users<br>
+• Successfully handled multiple projects and ensured smooth releases by scoping,
+planning and scheduling numerous product releases.<br>
+• Collaborated with development teams across the organization to create functional
+test plans, performed feature and regression testing, and detailed issue reporting
+                    </p>
+                </div>
+            
+            </div>
+            <div class="blub" style= "margin-bottom: 50px;">
+		    <div class="logo face" style="margin-right: 80px;" >
+			 <img src= "climax.jpg"width="150">
+		    </div>
+            
+             <div class="descript face" > 
+                  <h3> Climax Media          
+                 </h3>
+                 <h4> Quality Assurance Analyst (May - August 2016)
+                 
+                 </h4>
+                    <p> • Planned, conducted and monitored tests of client solutions to ensure product quality<br>
+• Documented internal audits and other quality assurance activities<br>
+• Investigated client complaints and non-conformance issues<br>
+• Created and executed manual tests for both software and systems<br>
+• Prepared several reports daily to communicate outcomes of quality activities,
+extensively accomplished via TestRail and LeanKit. Reports were then used to fix all
+quality issues.
+                    </p>
+                </div>
+            
+            </div>
+            <div style="overflow: hidden; margin-bottom: 50px;">
+		    <div class="logo face" style="margin-right: 80px;" >
+			 <img src= "flir.png" width="150">
+		    </div>
+            
+             <div class="descript face"> 
+                  <h3> Flir              
+                 </h3>
+                 <h4> Supply Chain Coordinator (January - August 2018)
+                 
+                 </h4>
+                    <p> • Worked exclusively with Excel and Systems, Applications and Products (SAP) software
+to organize documentation in the Supply Chain Department<br>
+• Successfully worked and cooperated with coworkers to process work orders under
+minimal supervision<br>
+• Maintained Inbound Control Log and followed-up with factories on open Purchase
+Orders
+                    </p>
+                </div>
+            
+            </div>
+     
+        </div>	
+	 </div>	 
+</div>
+    
+    
+<div  class="background3"></div>  
+<div class="background-white" >
+	<div id="projects" class="container">
+        <div class="row">
+	
+		<h1>Projects</h1>	
+		<hr>
+		
+             
+        <div class="face" style="text-align: center;"> 
+            <p> Projects coming soon! After finishing up this website I plan to move into android app development. Stay updated with my progress through my <a href="http://www.github.com/NathanDsouza">github</a>!
+            </p>
+        </div>
+        </div>
+		 
+	 
+	 </div>	 
+</div>
+<div  class="background3">
+		
+</div>  
+
+<div class="background-darkgrey" >
+	<div id="contact" class="container"style="margin: 0 auto;
+    max-width: 1250px;">
+        <div class="row">
+	
+		<h2>Contact</h2>	
+		<hr>
+        <div>
+             
+        <div class="face"  style="margin: 0 auto; text-align: center;" > 
+            <h4 style="color: white;"> <a href="http://www.github.com/NathanDsouza">Github</a> <a href="https://www.linkedin.com/in/nathan-d-souza-a33851145/">LinkedIn</a>  <a href="resume.pdf">Resume</a> <br> nathan.m.dsouza@gmail.com
+            </h4>
+        </div>
+        </div>
+        </div>
+		 
+	 
+	 </div>	 
+</div>
+
+    
+    
+    
 
 <script>
+
+
+window.onscroll = function() {myFunction()}; 
+var about = document.getElementById("about");
+var nav = document.getElementById("nav");
+var sticky = about.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    nav.style.position ="fixed";
+      nav.style.top = "0px";
+      //navbar.classList.add("sticky")
+  }  else {
+   nav.style.position ="absolute";
+      nav.style.top ="100%";
+      // navbar.classList.remove("sticky");
+  }
+}
+
+
+$("#nav li").click(function(event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($("a", this).attr('href')).offset().top
+    }, 750);
+});
+    
+    
+     function loopDown(){
+        $("#arrow").animate({
+            bottom : "15px"
+            },
+            750, function() {
+            loopUp();
+        });
+    }
+
+    function loopUp(){
+        $("#arrow").animate({
+            bottom : 0
+            },
+            750, function() {
+            loopDown();
+        });
+    }
+    loopDown();
 </script>
 
 
